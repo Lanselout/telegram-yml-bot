@@ -18,3 +18,20 @@
 
 ## 📁 Структура проекта
 
+telegram_yml_to_meta/ ├── bot/ # Telegram-бот (main.py) ├── parser/ # Парсинг YML → Meta формат ├── sheets/ # Интеграция с Google Sheets ├── utils/ # Логгер и вспомогательные ├── data/ # Сюда сохраняются загруженные XML-файлы ├── logs/ # Лог-файлы (опционально) ├── credentials.json # Google API ключ (локально) ├── .env # Переменные окружения (локально) ├── Procfile # Render worker setup ├── requirements.txt # Python зависимости └── README.md
+
+---
+
+## 🛠️ Запуск локально
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python -m bot.main
+
+
+.env
+TELEGRAM_BOT_TOKEN=your_token
+GOOGLE_SHEET_ID=sheet_id
+GOOGLE_CREDENTIALS_JSON_PATH=credentials.json
