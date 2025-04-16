@@ -1,0 +1,1588 @@
+openapi: 3.0.3
+info:
+  title: 'API ux.im'
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'https://{app}.admin.ux.im'
+paths:
+  /file-manager/initialize:
+    get:
+      summary: 'Initialize file manager'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      security: []
+  /file-manager/content:
+    get:
+      summary: 'Get files and directories for the selected path and disk'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                disk:
+                  type: string
+                  description: ''
+                  example: optio
+                path:
+                  type: string
+                  description: ''
+                  example: nihil
+      security: []
+  /file-manager/tree:
+    get:
+      summary: 'Directory tree'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                disk:
+                  type: string
+                  description: ''
+                  example: ab
+                path:
+                  type: string
+                  description: ''
+                  example: sed
+      security: []
+  /file-manager/select-disk:
+    get:
+      summary: 'Check the selected disk'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                disk:
+                  type: string
+                  description: ''
+                  example: et
+                path:
+                  type: string
+                  description: ''
+                  example: officiis
+      security: []
+  /file-manager/upload:
+    post:
+      summary: 'Upload files'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                disk:
+                  type: string
+                  description: ''
+                  example: consequatur
+                path:
+                  type: string
+                  description: ''
+                  example: ullam
+      security: []
+  /file-manager/delete:
+    post:
+      summary: 'Delete files and folders'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                disk:
+                  type: string
+                  description: ''
+                  example: modi
+                path:
+                  type: string
+                  description: ''
+                  example: quis
+      security: []
+  /file-manager/paste:
+    post:
+      summary: 'Copy / Cut files and folders'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                disk:
+                  type: string
+                  description: ''
+                  example: eos
+                path:
+                  type: string
+                  description: ''
+                  example: accusantium
+      security: []
+  /file-manager/rename:
+    post:
+      summary: Rename
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                disk:
+                  type: string
+                  description: ''
+                  example: eum
+                path:
+                  type: string
+                  description: ''
+                  example: molestias
+      security: []
+  /file-manager/download:
+    get:
+      summary: 'Download file'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                disk:
+                  type: string
+                  description: ''
+                  example: quis
+                path:
+                  type: string
+                  description: ''
+                  example: et
+      security: []
+  /file-manager/thumbnails:
+    get:
+      summary: 'Create thumbnails'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                disk:
+                  type: string
+                  description: ''
+                  example: ut
+                path:
+                  type: string
+                  description: ''
+                  example: in
+      security: []
+  /file-manager/preview:
+    get:
+      summary: 'Image preview'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                disk:
+                  type: string
+                  description: ''
+                  example: accusamus
+                path:
+                  type: string
+                  description: ''
+                  example: doloribus
+      security: []
+  /file-manager/url:
+    get:
+      summary: 'File url'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                disk:
+                  type: string
+                  description: ''
+                  example: facere
+                path:
+                  type: string
+                  description: ''
+                  example: numquam
+      security: []
+  /file-manager/create-directory:
+    post:
+      summary: 'Create new directory'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                disk:
+                  type: string
+                  description: ''
+                  example: commodi
+                path:
+                  type: string
+                  description: ''
+                  example: quis
+      security: []
+  /file-manager/create-file:
+    post:
+      summary: 'Create new file'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                disk:
+                  type: string
+                  description: ''
+                  example: labore
+                path:
+                  type: string
+                  description: ''
+                  example: placeat
+      security: []
+  /file-manager/update-file:
+    post:
+      summary: 'Update file'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                disk:
+                  type: string
+                  description: ''
+                  example: minus
+                path:
+                  type: string
+                  description: ''
+                  example: quo
+      security: []
+  /file-manager/stream-file:
+    get:
+      summary: 'Stream file'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                disk:
+                  type: string
+                  description: ''
+                  example: quo
+                path:
+                  type: string
+                  description: ''
+                  example: id
+      security: []
+  /file-manager/zip:
+    post:
+      summary: 'Create zip archive'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                disk:
+                  type: string
+                  description: ''
+                  example: sint
+                path:
+                  type: string
+                  description: ''
+                  example: ea
+      security: []
+  /file-manager/unzip:
+    post:
+      summary: 'Extract zip archive'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                disk:
+                  type: string
+                  description: ''
+                  example: culpa
+                path:
+                  type: string
+                  description: ''
+                  example: eaque
+      security: []
+  /file-manager/ckeditor:
+    get:
+      summary: 'Integration with ckeditor 4'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      security: []
+  /file-manager/tinymce:
+    get:
+      summary: 'Integration with TinyMCE v4'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      security: []
+  /file-manager/tinymce5:
+    get:
+      summary: 'Integration with TinyMCE v5'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      security: []
+  /file-manager/summernote:
+    get:
+      summary: 'Integration with SummerNote'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      security: []
+  /file-manager/fm-button:
+    get:
+      summary: 'Simple integration with input field'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'File Manger'
+      security: []
+  /api/item/filter:
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Items
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                filter:
+                  type: object
+                  description: ''
+                  example: []
+                  properties:
+                    page:
+                      type: integer
+                      description: 'Default 1. Example:'
+                      example: 7
+                    perPage:
+                      type: integer
+                      description: 'Items per page. Default 20. Example:'
+                      example: 12
+                    url:
+                      type: string
+                      description: 'Category url.'
+                      example: /cloth
+                    category:
+                      type: integer
+                      description: 'Category id.'
+                      example: 1
+                    priority:
+                      type: boolean
+                      description: 'Is show on main page.'
+                      example: false
+                    search:
+                      type: string
+                      description: 'search %like% by title and description.'
+                      example: aa
+                    price:
+                      type: array
+                      description: '[min_price, max_price].'
+                      example:
+                        - 0
+                        - 100
+                      items:
+                        type: integer
+                    sortBy:
+                      type: enum
+                      description: 'available values: -p, +p, priority or time.'
+                      example: time
+      security: []
+  /api/item/list:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Items
+      security: []
+  '/api/item/{id}':
+    delete:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Items
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the item.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/multisend/self:
+    post:
+      summary: 'Check template message'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Multisend
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: integer
+                  description: 'Order id'
+                  example: 10
+                template:
+                  type: object
+                  description: ''
+                  example: []
+                  properties:
+                    src:
+                      type: string
+                      description: 'HTML source.'
+                      example: '<p>hi</p>'
+                    settings:
+                      type: object
+                      description: ''
+                      example: []
+                      properties:
+                        images:
+                          type: object
+                          description: ''
+                          example: []
+                          properties:
+                            url:
+                              type: string
+                              description: 'local path to image'
+                              example: placeat
+                            id:
+                              type: telegram
+                              description: 'id upload file id'
+                              example: aut
+                        button:
+                          type: object
+                          description: ''
+                          example: []
+                          properties:
+                            link:
+                              type: string
+                              description: ''
+                              example: eos
+                            text:
+                              type: string
+                              description: ''
+                              example: voluptatem
+                            type:
+                              type: string
+                              description: .
+                              example: webApp
+      security: []
+  '/api/multisend/{id}':
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Multisend
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the multisend.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/options/categories:
+    get:
+      summary: 'List of all categories'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Options
+      security: []
+  '/api/options/{id}':
+    delete:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Options
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the option.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/options/settings:
+    get:
+      summary: 'Option Settings'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Options
+      security: []
+    put:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Options
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: integer
+                  description: ''
+                  example: 11
+                option_id:
+                  type: string
+                  description: ''
+                  example: et
+                option:
+                  type: string
+                  description: ''
+                  example: molestias
+                translate:
+                  type: object
+                  description: ''
+                  example: []
+                  properties: []
+      security: []
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Options
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                list:
+                  type: object
+                  description: ''
+                  example: []
+                  properties:
+                    id:
+                      type: integer
+                      description: ''
+                      example: 12
+                    option_id:
+                      type: string
+                      description: ''
+                      example: incidunt
+                    option:
+                      type: string
+                      description: ''
+                      example: itaque
+                    translate:
+                      type: object
+                      description: ''
+                      example: []
+                      properties: []
+                remove:
+                  type: object
+                  description: ''
+                  example: []
+                  properties:
+                    id:
+                      type: integer
+                      description: ''
+                      example: 2
+      security: []
+  '/api/options/settings/{id}':
+    delete:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Options
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the setting.'
+        example: pariatur
+        required: true
+        schema:
+          type: string
+  /api/order/filter:
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: X-TOKEN
+          description: ''
+          example: 6I92OcFRFBTEGx3INZs8pqk6LA0FXY3pdVZSsT2mS9oYqxAZjFaGBn998aALnufS
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Orders
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: integer
+                  description: 'Works only id or filter'
+                  example: 13
+                filter:
+                  type: object
+                  description: ''
+                  example: []
+                  properties:
+                    page:
+                      type: integer
+                      description: 'Default 1. Example:'
+                      example: 3
+                    perPage:
+                      type: integer
+                      description: 'Items per page. Default 20. Example:'
+                      example: 3
+                    search:
+                      type: string
+                      description: 'search %like% by check_id,id or user_id.'
+                      example: '15'
+                    status:
+                      type: enum
+                      description: 'available values: new, process, progress, delivery, back.'
+                      example: new
+                    pay_status:
+                      type: array
+                      description: 'available values: [pay, npay].'
+                      example:
+                        - neque
+                      items:
+                        type: string
+                    price:
+                      type: array
+                      description: '[min_price, max_price].'
+                      example:
+                        - 0
+                        - 100
+                      items:
+                        type: integer
+                    created_at:
+                      type: array
+                      description: '[min_unix_timestamp, max_unix_timestamp].'
+                      example:
+                        - 0
+                        - 1880001105
+                      items:
+                        type: integer
+                    sortBy:
+                      type: enum
+                      description: 'available values: -p, +p or time.'
+                      example: time
+      security: []
+tags:
+  -
+    name: 'File Manger'
+    description: ''
+  -
+    name: Items
+    description: ''
+  -
+    name: Multisend
+    description: ''
+  -
+    name: Options
+    description: ''
+  -
+    name: Orders
+    description: ''
